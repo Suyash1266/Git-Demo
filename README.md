@@ -93,4 +93,31 @@ git clone 'paste the URL here'
 ```
 5. Press enter and the GitHub repository will be cloned as is in the folder, where you have run this command.
 
+### __Syncing changes in your local copy with GitHub repo__
+Once you have two copies of your source code or repo, you will want to keep those synced with each other so that both are updated to the latest version and have all the changes being made.
+
+You will have to do this in two parts:
+1. __Fetching changes from the cloud repo__  
+To do this, you will have to pull the changes made into the repo and merge them with your local copy.
+
+```bash
+git fetch --all
+# this will fetch the changes from all branches in all remotes (if there are more than one remote source)
+```
+
+```bash
+git fetch origin --all
+# this will fetch the contents from all the branches present in the remote labelled as origin, which usually is the default name of the primary remote
+```
+
+```bash
+git pull
+# this will fetch the contents from the origin and merge them into current branch
+```
+
+```bash
+git pull <remote_name> <branch_name>
+# this will fetch all the changes from the branch in the given remote and merge it into the current local branch
+```
+
 ```
