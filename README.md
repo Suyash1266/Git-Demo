@@ -120,4 +120,15 @@ git pull <remote_name> <branch_name>
 # this will fetch all the changes from the branch in the given remote and merge it into the current local branch
 ```
 
+2. __Pushing your changes to the cloud repo__  
+Let's say you made some changes in your local repo and now you want to syncronize the changes with the cloud repo so that it remains updated. First you will pull any changes from the cloud repo, using the above commands, and then after resolving merge conflicts, if any, you will push your code using the `git pull` command.
+
+```bash
+git push <remote_name> <branch>
+# this will push the contents of your current local branch to the remote branch you specified.
+```
+
+```bash
+git push <remote_name> --all
+# this push all the branches from the local repo to the cloud repo
 ```
