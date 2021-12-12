@@ -77,5 +77,20 @@ git remote -v
 # Verifies the new remote URL
 git push origin main
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
-# specified as the origin
+```
+## DAY 2
+
+Once you have setup your repository in GitHub, you can always retrieve the latest working copy of your code and start working on it, in case of any system failure. 
+
+### __Cloning your repository__
+In case you lose the source code from your personal computer, you can always clone it from GitHub. To do this:
+1. Go to your repository page.
+2. Click the Code button.
+3. Copy the URL being displayed.
+4. Go to terminal/cmd/powershell in your PC, and type the following command:
+```bash
+git clone 'paste the URL here'
+```
+5. Press enter and the GitHub repository will be cloned as is in the folder, where you have run this command.
+
 ```
